@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Atelier — Bouardi</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="Bouardi Home">
+      <span class="mark">
+        <img src='assets/img/bouardi-logo.png' alt='Bouardi logo'/>
+      </span>
+      <span>
+        <span class="word">BOUARDI</span>
+        <small>PARIS</small>
+      </span>
+    </a>
+
+    <nav class="menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="lookbook.html">Lookbook</a>
+      <a href="atelier.html">Atelier</a>
+      <a href="appointments.html">Appointments</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <div class="breadcrumb">Bouardi / Atelier</div>
+        <h1>Atelier</h1>
+        <p class="lead">Where the rose becomes couture — craft, construction, and finishing.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid3">
+        <div class="feature">
+          <div class="title">Fabrics</div>
+          <div class="big">Premium Drape</div>
+          <div class="txt">Structured bodices, fluid skirts, and intentional weight for runway movement.</div>
+        </div>
+        <div class="feature">
+          <div class="title">Details</div>
+          <div class="big">Hand Finish</div>
+          <div class="txt">Couture placement, floral texture, and meticulous edge work.</div>
+        </div>
+        <div class="feature">
+          <div class="title">Fit</div>
+          <div class="big">Made-to-order</div>
+          <div class="txt">Bespoke adjustments to elevate posture, silhouette, and presence.</div>
+        </div>
+      </div>
+
+      <div style="margin-top:18px;" class="feature">
+        <div class="title">Note</div>
+        <div class="txt">
+          Replace this text with your atelier story (Paris inspiration, craftsmanship philosophy, and materials).
+          You can also add prices, timelines, and made-to-order process.
+        </div>
+      </div>
+    </section>
+  </main>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="tiny">Maison Bouardi • Paris</div>
+        <div style="margin-top:6px;">© <span id="year"></span> Bouardi. All rights reserved.</div>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn" href="appointments.html">Request a fitting</a>
+        <a class="btn primary" href="collection.html">Explore Rose Muse</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Appointments — Bouardi</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="Bouardi Home">
+      <span class="mark">
+        <img src='assets/img/bouardi-logo.png' alt='Bouardi logo'/>
+      </span>
+      <span>
+        <span class="word">BOUARDI</span>
+        <small>PARIS</small>
+      </span>
+    </a>
+
+    <nav class="menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="collection.html">Collection</a>
+      <a href="lookbook.html">Lookbook</a>
+      <a href="atelier.html">Atelier</a>
+      <a href="appointments.html">Appointments</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <section class="page-head">
+      <div class="container">
+        <div class="breadcrumb">Bouardi / Appointments</div>
+        <h1>Request a fitting</h1>
+        <p class="lead">Send your details and preferred date — our atelier will confirm.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <form class="form" onsubmit="return false;">
+            <div class="two">
+              <div class="input">
+                <label>Full name</label>
+                <input placeholder="Your name"/>
+              </div>
+              <div class="input">
+                <label>Email</label>
+                <input placeholder="name@email.com" type="email"/>
+              </div>
+            </div>
+
+            <div class="two">
+              <div class="input">
+                <label>City</label>
+                <input placeholder="Paris / Kuwait / ..."/>
+              </div>
+              <div class="input">
+                <label>Preferred date</label>
+                <input type="date"/>
+              </div>
+            </div>
+
+            <div class="input">
+              <label>Notes</label>
+              <textarea placeholder="Tell us what piece you want (Look 01/02/03), sizing notes, and any requests."></textarea>
+            </div>
+
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <a class="btn primary" href="#" onclick="alert('Saved locally. Connect this form to email or WhatsApp when ready.');">Submit request</a>
+              <a class="btn" href="contact.html">Contact options</a>
+            </div>
+
+            <div class="txt" style="margin-top:6px; color:rgba(16,16,16,.62); font-size:13px; line-height:1.7;">
+              Tip: If you want this form to actually send emails, I can connect it to Formspree / Netlify Forms / Google Forms.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div>
+        <div class="tiny">Maison Bouardi • Paris</div>
+        <div style="margin-top:6px;">© <span id="year"></span> Bouardi. All rights reserved.</div>
+      </div>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn" href="appointments.html">Request a fitting</a>
+        <a class="btn primary" href="collection.html">Explore Rose Muse</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
